@@ -1,0 +1,31 @@
+{
+  "name": "reqlist",
+  "version": "1.0.0",
+  "description": "Requirements List extension for ReSpec based publications",
+  "main": "lib/reqlist.js",
+  "scripts": {
+    "build": "babel src -d lib && cp src/*.css lib",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "publish": "publish-to-git"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jccr/reqlist.git"
+  },
+  "author": "Juan Carlos Corona Romero <c@rlos.email>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jccr/reqlist/issues"
+  },
+  "homepage": "https://github.com/jccr/reqlist#readme",
+  "files": [
+    "lib",
+    "LICENSE"
+  ],
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.6.2",
+    "publish-to-git": "^1.1.7"
+  }
+}
