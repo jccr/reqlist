@@ -4,11 +4,20 @@ Extend your ReSpec enabled technical report with a navigation section that lists
 
 ## Usage
 
-In your spec's HTML page, add the JS and CSS files from this repository.
+In your spec's HTML `<head>`, you can add the JS and CSS files from this npm published package.
+
+```html
+<head>
+  <!-- ... -->  
+  <script src="https://unpkg.com/reqlist/lib/reqlist.js" class="remove"></script>
+  <link href="https://unpkg.com/reqlist/lib/reqlist.css" class="remove" rel="stylesheet" type="text/css" />
+  <!-- ... --> 
+</head> 
+```
 
 In your ReSpec config, add the `prepare_reqlist` function to the `preProcess` array field, and `add_reqlist_button` to `postProcess`.
 
-```
+```js
 var respecConfig = {
   preProcess: [
     prepare_reqlist
