@@ -1,6 +1,6 @@
 {
   "name": "reqlist",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Requirements List extension for ReSpec based publications",
   "main": "lib/reqlist.js",
   "scripts": {
