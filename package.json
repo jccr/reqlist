@@ -5,8 +5,8 @@
   "main": "lib/reqlist.js",
   "scripts": {
     "build": "babel src -d lib && cp src/*.css lib",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "publish": "publish-to-git"
+    "prepublishOnly": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -25,7 +25,6 @@
   "devDependencies": {
     "@babel/cli": "^7.0.0",
     "@babel/core": "^7.0.0",
-    "@babel/preset-env": "^7.6.2",
-    "publish-to-git": "^1.1.7"
+    "@babel/preset-env": "^7.6.2"
   }
 }
