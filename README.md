@@ -10,7 +10,7 @@ In your spec's HTML `<head>`, you can add the JS and CSS files from this npm pub
 <head>
   <!-- ... -->  
   <script src="https://unpkg.com/reqlist/lib/reqlist.js" class="remove"></script>
-  <link href="https://unpkg.com/reqlist/lib/reqlist.css" class="remove" rel="stylesheet" type="text/css" />
+  <link href="https://unpkg.com/reqlist/lib/reqlist.css" class="removeOnSave" rel="stylesheet" type="text/css" />
   <!-- ... --> 
 </head> 
 ```
