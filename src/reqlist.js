@@ -15,7 +15,7 @@ function prepare_reqlist(config, document) {
 
   let node;
   while ((node = nodeIterator.nextNode())) {
-    if (/MUST|SHOULD/.test(node.data)) {
+    if (/MUST|REQUIRED|SHOULD|RECOMMENDED/.test(node.data)) {
       const statesList = /:\s*$/.test(node.parentElement.textContent);
       const section = node.parentElement.closest("section");
       const header = section.querySelector("h1,h2,h3,h4,h5,h6,h7,h8,h9");
